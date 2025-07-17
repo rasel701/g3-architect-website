@@ -178,20 +178,23 @@ section{
 }
 
 .text-section-container,.content-img{
-    flex:1; 
+    /* flex:1;  */
 }
 
 .text-section-container{
-
+    max-width: 586px;
     padding: 38px 54px;
+    margin: 0 auto;
 }
 
 .content-img{
+    max-width: 800px;
     position: relative;
+    
 }
 
 .content-img img{
-    padding-left: 70px;
+    padding-left: 77px;
     width: 100%;
 }
 
@@ -200,13 +203,19 @@ section{
     padding-left: 30px;
 }
 .enjon-description{
+    
     margin-top: 25px;
     margin-bottom: 30px;
     
 }
 
+.sub-content{
+    display: flex;
+    flex-direction: column;
+}
+
 .content{
-    width: 586px;
+    
     padding: 30px 42px 30px 30px;
     /* background-color: rgba(232, 224, 213,.5); */
     margin-bottom: 10px;
@@ -216,6 +225,7 @@ section{
 
 .content-title{
     margin-bottom: 10px;
+
 }
 .enjon-button{
     padding: 45px 42px;
@@ -226,7 +236,6 @@ section{
     justify-content: center;
     border-radius: 8px;
     position:absolute;
-    left: 0;
     bottom:0;
     border: none;
 
@@ -240,6 +249,7 @@ section{
 
     .display-flex{
         flex-direction: column;
+        justify-content: center;
     }
     .brand{
         font-size: 2rem;
@@ -262,7 +272,7 @@ section{
         font-size: 3rem;
 
     }
-    .feature-title{
+    .feature-title,.enjon-title{
         font-size: 2rem;
     }   
     .our-features{
@@ -271,12 +281,27 @@ section{
     .team-image-container{
         grid-template-columns: 1fr;
     }
+    
+    .enjon-button{
+        padding: 30px;
+        bottom: -45px;
+        left:30px;
+    }
+    .enjon-button h2{
+        font-size: xx-large;
+    }
+    
 }
 
 @media screen and (min-width:577px) and (max-width:992px) {
 
-    .teams{
+    .teams,.feature-enjoy{
         flex-direction: column;
+    }
+
+    .enjon-button{
+        padding: 30px 32px;
+        bottom: -40px;
     }
 
     
