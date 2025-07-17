@@ -1,0 +1,283 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  
+}
+
+.work-sans-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* shared style */
+.display-flex{
+    display: flex;
+}
+
+/* dark-1 */
+
+.text-gray-night{
+    color: #131313;
+}
+
+/* dark-2 */
+.text-gray{
+    color:#424242 ;
+}
+/* dark-3 */
+.text-gray-light{
+    color: #727272;
+    
+}
+
+.bg-light{
+    background-color: rgba(255, 144, 14, 0.1);
+    overflow: hidden;
+}
+
+.btn-primary{
+    background-color: #FF900E;
+    padding: 20px 25px;
+    color: white;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: none;
+}
+
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.dark-bold{
+    font-size: 45px;
+}
+section{
+    margin-top: 57px;
+    margin-bottom:100px;
+}
+
+.section-title{
+    font-size: 3rem;  
+}
+
+/* header style */
+
+
+/* navber related styles */
+
+.navber{
+    justify-content: space-between;
+    align-items: center;
+
+    
+}
+
+ .nav-item {
+    list-style: none;
+    margin-right: 30px;
+    
+
+}
+.nav-links{
+    display: flex;
+}
+ .nav-link{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+
+.navber,.banner{
+    max-width: 1400px;
+    margin: 30px auto;
+}
+.brand{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.banner img{
+    width: 100%;
+    /* height: 705px; */
+    margin-bottom:4rem;
+}
+
+.banner-content{
+    max-width: 862px;
+    margin-top:102px ;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.banner-title{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.banner-description{
+    margin: 25px 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+
+
+/* team style */
+
+.teams{
+    align-items: center;
+    gap:77px;
+}
+
+.team-image-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:24px;
+}
+
+.our-features{
+    max-width:537px ;
+}
+
+
+.team-image-container img{
+    border-radius: 10px;
+    width: 100%;
+}
+
+#quick-list{
+    font-weight: 500;
+}
+.featur{
+    color: #FF900E;
+}
+
+.feature-description{
+    margin-top: 24px;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+
+/* feature-enjon style */
+
+.feature-enjon{
+    display: flex;
+}
+
+.text-section-container,.content-img{
+    flex:1; 
+}
+
+.text-section-container{
+
+    padding: 38px 54px;
+}
+
+.content-img{
+    position: relative;
+}
+
+.content-img img{
+    padding-left: 70px;
+    width: 100%;
+}
+
+.enjon-title{
+    max-width: 468px;
+    padding-left: 30px;
+}
+.enjon-description{
+    margin-top: 25px;
+    margin-bottom: 30px;
+    
+}
+
+.content{
+    width: 586px;
+    padding: 30px 42px 30px 30px;
+    /* background-color: rgba(232, 224, 213,.5); */
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 3px 0px rgb(218, 204, 204);
+}
+
+.content-title{
+    margin-bottom: 10px;
+}
+.enjon-button{
+    padding: 45px 42px;
+    background-color: #FF900E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    position:absolute;
+    left: 0;
+    bottom:0;
+    border: none;
+
+}
+.enjon-button h2{
+    font-size: 45px;
+    color: white;
+}
+
+@media screen and (max-width:576px) {
+
+    .display-flex{
+        flex-direction: column;
+    }
+    .brand{
+        font-size: 2rem;
+    }
+    .nav-links{
+        display: flex;   
+        background-color: blanchedalmond;
+        
+        width: 100%;
+        margin: 20px auto;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap:10px;
+    }
+    .nav-link{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .banner-title{
+        font-size: 3rem;
+
+    }
+    .feature-title{
+        font-size: 2rem;
+    }   
+    .our-features{
+        max-width: 300px;
+    }
+    .team-image-container{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width:577px) and (max-width:992px) {
+
+    .teams{
+        flex-direction: column;
+    }
+
+    
+}
