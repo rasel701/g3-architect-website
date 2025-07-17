@@ -257,11 +257,13 @@ section{
     justify-content: center;
     align-items: center;
     text-align: center;
+    
 }
 
 .facts-container{
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    
 }
 
 .fact-number{
@@ -323,7 +325,13 @@ section{
     .enjon-button h2{
         font-size: xx-large;
     }
-    
+    .facts-container{
+        grid-template-columns: repeat(1,1fr);
+       row-gap: 20px;
+    }
+    .fact-card{
+        margin: 0 auto;
+    }
 }
 
 @media screen and (min-width:577px) and (max-width:992px) {
@@ -336,6 +344,16 @@ section{
         padding: 30px 32px;
         bottom: -40px;
     }
+
+        .facts-container{
+        grid-template-columns: repeat(2,1fr);
+       row-gap: 20px;
+    }
+
+        .fact-card{
+        margin: 0 auto;
+    }
+ 
 
     
 }
